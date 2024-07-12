@@ -42,6 +42,6 @@ public class CatsServlet extends HttpServlet {
         Cat newCat = new Cat(name,race,meal, LocalDate.parse(birthdate));
         cats.add(newCat);
 
-        resp.sendRedirect("/JEE_cats_war_exploded/cats");
+        resp.sendRedirect("cats");
     }
 }
